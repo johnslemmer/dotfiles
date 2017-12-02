@@ -46,3 +46,11 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# npx will automatically lookup scripts in the current project
+# or we can optionally add @version to run an npm binary from anywhere
+source <(npx --shell-auto-fallback bash)
+
+# direnv hook to make it work
+# WARNING: needs to be the last line
+eval "$(direnv hook bash)"

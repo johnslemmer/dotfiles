@@ -147,6 +147,14 @@
 	# Use `hexdump` to diff binary files
 	textconv = hexdump -v -C
 
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
 [help]
 
 	# Automatically correct and execute mistyped commands
@@ -172,7 +180,7 @@
 	pushInsteadOf = "github:"
 	pushInsteadOf = "git://github.com/"
 
-[url "git://github.com/"]
+[url "https://github.com/"]
 
 	insteadOf = "github:"
 
@@ -182,6 +190,16 @@
 	pushInsteadOf = "gist:"
 	pushInsteadOf = "git://gist.github.com/"
 
-[url "git://gist.github.com/"]
+[url "https://github.com/"]
 
 	insteadOf = "gist:"
+
+[url "git@bitbucket.org:"]
+
+	insteadOf = "bb:"
+	pushInsteadOf = "bitbucket:"
+	pushInsteadOf = "git://bitbucket.org/"
+
+[url "git://github.com/"]
+
+	insteadOf = "bitbucket:"

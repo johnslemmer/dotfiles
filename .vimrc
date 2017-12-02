@@ -1,8 +1,12 @@
 " Use the Solarized Dark theme
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
 let g:solarized_termtrans=1
+syntax enable
 
+" Remeber the directory the current file is in
+set autochdir
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -34,6 +38,14 @@ endif
 " Don’t create backups when editing files in certain directories
 set backupskip=/tmp/*,/private/tmp/*
 
+" Editor Behavior for wrapping
+set whichwrap+=<
+set whichwrap+=>
+set whichwrap+=h
+set whichwrap+=l
+set whichwrap+=[
+set whichwrap+=]
+
 " Respect modeline in files
 set modeline
 set modelines=4
@@ -42,12 +54,11 @@ set exrc
 set secure
 " Enable line numbers
 set number
-" Enable syntax highlighting
-syntax on
-" Highlight current line
-set cursorline
-" Make tabs as wide as two spaces
-set tabstop=2
+" Get tabs right
+set tabstop=4
+set softtabstop=4
+set expandtab
+set shiftwidth=4
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -75,11 +86,6 @@ set showmode
 set title
 " Show the (partial) command as it’s being typed
 set showcmd
-" Use relative line numbers
-if exists("&relativenumber")
-	set relativenumber
-	au BufReadPost * set relativenumber
-endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
