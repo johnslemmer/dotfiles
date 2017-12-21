@@ -33,6 +33,7 @@ alias la="ls -lhaF ${colorflag}"
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # Always use color output for `ls`
+# TODO(JS) I'm not sure we want this ALL THE TIME (other sripts using ls may not want color)
 alias ls="command ls ${colorflag}"
 
 # Always enable colored `grep` output
