@@ -200,6 +200,6 @@
 	pushInsteadOf = "bitbucket:"
 	pushInsteadOf = "git://bitbucket.org/"
 
-[url "git://github.com/"]
+[url "git://bitbucket.org"]
 
 	insteadOf = "bitbucket:"
