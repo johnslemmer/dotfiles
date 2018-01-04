@@ -188,3 +188,8 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# `title` sets the title of the tab/window for most terminals.
+function title() {
+	echo -e "\033]0;${1:?please specify a title}\007";
+}
