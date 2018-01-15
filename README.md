@@ -7,7 +7,7 @@ Humbly forked from https://github.com/mathiasbynens/dotfiles
 I keep the master branch just to keep in sync with mathiasbynens
 
 All other branches are specific to the type of machine I'm using these dotfiles
-one (ie.  I don't need a .macos on Ubuntu, but I do need apt-get instead of brew)
+on (ie.  I don't need a .macos on Ubuntu, but I do need apt-get instead of brew)
 
 ## Installation
 
