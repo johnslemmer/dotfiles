@@ -14,6 +14,7 @@ function doIt() {
 		--exclude ".macos" \
 		--exclude "init" \
 		--exclude "bin" \
+		--exclude ".vscode" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
 }
