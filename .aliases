@@ -11,7 +11,7 @@ alias -- -="cd -"
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias code="cd ~/Code"
+alias p="cd ~/Code"
 alias g="git"
 
 # Detect which `ls` flavor is in use
