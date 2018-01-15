@@ -8,6 +8,9 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Add cask so brew can install applications
+brew tap caskroom/cask
+
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -72,6 +75,57 @@ brew install libdvdcss
 
 # Others???
 
+
+# APPLICATIONS
+
+# essentials
+brew cask install karabiner-elements
+brew cask install google-chrome
+brew cask install dropbox
+brew cask install google-backup-and-sync
+brew cask install openoffice
+brew cask install adobe-acrobat-reader
+
+# personal
+# brew cask install spotify
+brew cask install handbrake
+brew cask install transmission
+brew cask install vlc
+brew cask install kindle
+brew cask install the-unarchiver
+brew cask install chrome-remote-desktop-host
+
+# dev: general
+brew cask install visual-studio-code
+brew cask install atom
+brew cask install hyper
+brew cask install sourcetree
+
+# dev: apps
+# brew cask install xcode
+brew cask install expo-xde
+brew cask install android-studio
+brew cask install genymotion
+
+# dev: server
+brew cask install graphql-playground
+brew cask install docker
+
+# work
+brew cask install harvest
+brew cask install tunnelblick
+brew cask install virtualbox
+brew cask install perforce
+brew cask install p4v
+brew cask install p4merge
+# brew cask install p4admin
+brew cask install zooomus
+brew cask install skype
+# brew cask install skype meetings app
+# brew cask install mimecast
+# brew cask install mailraider pro
+brew cask install vmware-horizon-client
+brew cask install manageengine-mibbrowser
 
 # Remove outdated versions from the cellar.
 brew cleanup
