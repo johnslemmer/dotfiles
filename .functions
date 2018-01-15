@@ -161,6 +161,16 @@ function a() {
 	fi;
 }
 
+# `code` with no arguments opens the current directory in VSCode, otherwise
+# opens the given location
+function code() {
+	if [ $# -eq 0 ]; then
+		/usr/local/bin/code .;
+	else
+		/usr/local/bin/code "$@";
+	fi;
+}
+
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
 function v() {
