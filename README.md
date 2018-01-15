@@ -79,3 +79,13 @@ When setting up a new Mac, you may want to install some common [Homebrew](https:
 ```
 
 Some of the functionality of these dotfiles depends on formulae installed by `brew.sh`. If you don’t plan to run `brew.sh`, you should look carefully through the script and manually install any particularly important ones. A good example is Bash/Git completion: the dotfiles use a special version from Homebrew.
+
+# TODOs
+
+- make colors in hyper terminal work better
+- Use code settings sync extension in VScode instead of keeping it here in dotfiles
+- Ouptut helpful input in brew.sh about apps that need to be installed by hand via appstore
+- Bring transparency back in .macos
+- .macos create network interfaces for native VPNs (maybe?)
+- make a work ubuntu branch
+- make a bare-essentials ubuntu branch
