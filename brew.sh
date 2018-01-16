@@ -110,6 +110,7 @@ brew cask install genymotion
 # dev: server
 brew cask install graphql-playground
 brew cask install docker
+brew cask install java
 
 # work
 brew cask install harvest
