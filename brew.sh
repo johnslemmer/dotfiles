@@ -50,7 +50,7 @@ brew install ack
 #brew install exiv2
 brew install git
 brew install git-lfs
-brew install imagemagick --with-webp
+#brew install imagemagick --with-webp
 brew install lua
 brew install lynx
 brew install p7zip
@@ -65,6 +65,7 @@ brew install zopfli
 
 # Other dev tools
 brew install node
+brew install yarn
 brew install direnv
 brew install pyenv
 brew install pipenv
@@ -96,8 +97,9 @@ brew cask install the-unarchiver
 brew cask install chrome-remote-desktop-host
 
 # dev: general
+brew cask install slack
 brew cask install visual-studio-code
-brew cask install atom
+#brew cask install atom
 brew cask install hyper
 brew cask install sourcetree
 
@@ -118,15 +120,14 @@ brew cask install tunnelblick
 brew cask install virtualbox
 brew cask install perforce
 brew cask install p4v
-brew cask install p4merge
-# brew cask install p4admin
-brew cask install zooomus
+brew cask install zoomus
 brew cask install skype
 # brew cask install skype meetings app
 # brew cask install mimecast
 # brew cask install mailraider pro
 brew cask install vmware-horizon-client
 brew cask install manageengine-mibbrowser
+brew cask install wireshark
 
 # Remove outdated versions from the cellar.
 brew cleanup
