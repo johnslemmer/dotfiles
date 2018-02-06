@@ -137,3 +137,9 @@ brew cleanup
 # dev
 yarn global add hyperlayout
 
+# PYTHON MODLES
+
+# dev
+pip2 install --upgrade pip
+pip2 install --upgrade setuptools
+pip2 install pylint
