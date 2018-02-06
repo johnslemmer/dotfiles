@@ -23,10 +23,12 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 #sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
 
 # Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+# NOTE(JS) don't want to touch anything firmware-wise
+#sudo pmset -a standbydelay 86400
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+# NOTE(JS) don't want to touch anything firmware-wise
+#sudo nvram SystemAudioVolume=" "
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
 # NOTE(JS) I like the transparency
@@ -100,7 +102,8 @@ echo "0x08000100:0" > ~/.CFUserTextEncoding
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+# NOTE(JS) no thanks.
+# sudo systemsetup -setrestartfreeze on
 
 # Never go into computer sleep mode
 # NOTE(JS) I want this to be true only when plugged in.  So commented out and
@@ -140,7 +143,8 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Disable hibernation (speeds up entering sleep mode)
 # sudo pmset -a hibernatemode 0
 # NOTE(JS) use 0 on desktops and 3 on laptops.
-sudo pmset -a hibernatemode 3
+# NOTE(JS) just don't touch this stuff for now
+# sudo pmset -a hibernatemode 3
 
 # NOTE(JS) and since on a laptop then don't touch the sleepimage
 # Remove the sleep image file to save disk space
@@ -422,7 +426,8 @@ find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -dele
 
 # Add iOS & Watch Simulator to Launchpad
 sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
+# NOTE(JS) isn't there anymore
+# sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
 
 # Add a spacer to the left side of the Dock (where the applications are)
 #defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
