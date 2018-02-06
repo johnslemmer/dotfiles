@@ -1,0 +1,22 @@
+{
+    "kxDev": [
+        "title build && ssh johnsl@10.211.55.6",
+        "title dev && ssh johnsl@10.211.55.6",
+        "title test && ssh johnsl@10.211.55.6"
+    ],
+    "kxRemoteHome": [
+        "title rem && ssh test@192.168.8.1",
+        "title root && ssh root@192.168.8.1",
+        "title sim && ssh johnsl@10.211.55.6"
+    ],
+    "kxRemoteLocal": [
+        "title rem && ssh test@192.168.7.1",
+        "title root && ssh root@192.168.7.1",
+        "title sim && ssh johnsl@10.211.55.6"
+    ],
+    "kxRemoteDublin": [
+        "title build && ssh test@10.40.77.4",
+        "title dev && ssh root@10.40.77.4",
+        "title sim && ssh root@10.34.72.34"
+    ]
+}

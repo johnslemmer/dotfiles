@@ -131,3 +131,9 @@ brew cask install wireshark
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# YARN GLOBALS
+
+# dev
+yarn global add hyperlayout
+
