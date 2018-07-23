@@ -2,7 +2,7 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-# TODO(JS) remove beloew bin when we actually have binaries to copy over
+# TODO(JS) remove below bin when we actually have binaries to copy over
 function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
@@ -10,8 +10,8 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		--exclude ".editorconfig" \
-		--exclude "brew.sh" \
-		--exclude ".macos" \
+		--exclude "apt.sh" \
+		--exclude "setup.sh" \
 		--exclude "init" \
 		--exclude "bin" \
 		--exclude ".vscode" \

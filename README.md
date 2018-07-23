@@ -7,7 +7,7 @@ Humbly forked from https://github.com/mathiasbynens/dotfiles
 I keep the master branch just to keep in sync with mathiasbynens
 
 All other branches are specific to the type of machine I'm using these dotfiles
-on (ie.  I don't need a .macos on Ubuntu, but I do need apt-get instead of brew)
+on (ie. I don't need a .macos on Ubuntu, but I do need apt-get instead of brew)
 
 ## Installation
 
@@ -62,30 +62,15 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
 
-### Sensible macOS defaults
+### Install apt formulae
 
-When setting up a new Mac, you may want to set some sensible macOS defaults:
-
-```bash
-./.macos
-```
-
-### Install Homebrew formulae
-
-When setting up a new Mac, you may want to install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew, of course):
+TODO...
 
 ```bash
-./brew.sh
+./apt.sh
 ```
-
-Some of the functionality of these dotfiles depends on formulae installed by `brew.sh`. If you don’t plan to run `brew.sh`, you should look carefully through the script and manually install any particularly important ones. A good example is Bash/Git completion: the dotfiles use a special version from Homebrew.
 
 # TODOs
 
-- make colors in hyper terminal work better
-- Use code settings sync extension in VScode instead of keeping it here in dotfiles
-- Ouptut helpful input in brew.sh about apps that need to be installed by hand via appstore
-- Bring transparency back in .macos
-- .macos create network interfaces for native VPNs (maybe?)
-- make a work ubuntu branch
-- make a bare-essentials ubuntu branch
+-   make colors in hyper terminal work better
+-   make a bare-essentials ubuntu branch
