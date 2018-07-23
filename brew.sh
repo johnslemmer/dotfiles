@@ -128,6 +128,7 @@ brew cask install skype
 brew cask install vmware-horizon-client
 brew cask install manageengine-mibbrowser
 brew cask install wireshark
+brew cask install postman
 
 # Remove outdated versions from the cellar.
 brew cleanup
