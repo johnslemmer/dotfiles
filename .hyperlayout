@@ -15,8 +15,12 @@
         "title sim && ssh johnsl@10.211.55.6"
     ],
     "kxRemoteDublin": [
-        "title build && ssh test@10.40.77.4",
-        "title dev && ssh root@10.40.77.4",
-        "title sim && ssh root@10.34.72.34"
+        "title rem && ssh test@10.40.77.4",
+        "title root && ssh root@10.40.77.4",
+        "title sim && ssh root@10.34.72.32"
+    ],
+    "kxRemoteCummins": [
+        "title rem && ssh test@10.40.101.86",
+        "title root && ssh root@10.40.101.86"
     ]
 }
