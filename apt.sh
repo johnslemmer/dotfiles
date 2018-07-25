@@ -7,6 +7,7 @@ sudo apt upgrade
 sudo apt install git
 sudo apt install vim
 sudo apt install ssh
+sudo apt install sshpass
 sudo apt install net-tools
 sudo apt install direnv
 sudo apt install screen
