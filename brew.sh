@@ -106,7 +106,6 @@ brew cask install etcher
 
 # dev: apps
 # brew cask install xcode
-brew cask install expo-xde
 brew cask install android-studio
 brew cask install genymotion
 
