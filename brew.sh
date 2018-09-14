@@ -59,6 +59,7 @@ brew install pv
 brew install rename
 brew install rlwrap
 brew install ssh-copy-id
+brew install telnet
 brew install tree
 brew install vbindiff
 brew install zopfli
@@ -86,6 +87,7 @@ brew cask install dropbox
 brew cask install google-backup-and-sync
 brew cask install openoffice
 brew cask install adobe-acrobat-reader
+# APP STORE install magnet
 
 # personal
 # brew cask install spotify
@@ -105,7 +107,7 @@ brew cask install sourcetree
 brew cask install etcher
 
 # dev: apps
-# brew cask install xcode
+# APP STORE install xcode
 brew cask install android-studio
 brew cask install genymotion
 
