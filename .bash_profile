@@ -51,6 +51,9 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # or we can optionally add @version to run an npm binary from anywhere
 source <(npx --shell-auto-fallback bash)
 
+# pyenv shim
+eval "$(pyenv init -)"
+
 # direnv hook to make it work
 # WARNING: needs to be the last line
 eval "$(direnv hook bash)"

@@ -121,7 +121,7 @@ module.exports = {
   plugins: [
     "hyperlayout",
     "hyperterm-paste",
-    "hyper-solarized-dark"
+    "hyper-solarized-light"
   ],
 
   // in development, you can create a directory under

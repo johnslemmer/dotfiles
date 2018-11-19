@@ -63,11 +63,14 @@ brew install telnet
 brew install tree
 brew install vbindiff
 brew install zopfli
+brew install readline
+brew install xz
 
 # Other dev tools
 brew install node
 brew install yarn
 brew install direnv
+brew install python@2
 brew install pyenv
 brew install pipenv
 brew install watchman
@@ -146,3 +149,7 @@ yarn global add hyperlayout
 pip2 install --upgrade pip
 pip2 install --upgrade setuptools
 pip2 install pylint
+#curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+#poetry completions bash > $(brew --prefix)/etc/bash_completion.d/poetry.bash-completion
+
+
