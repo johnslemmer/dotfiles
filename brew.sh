@@ -69,6 +69,7 @@ brew install xz
 # Other dev tools
 brew install node
 brew install yarn
+brew install nvm
 brew install direnv
 brew install python@2
 brew install pyenv

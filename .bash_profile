@@ -54,6 +54,10 @@ source <(npx --shell-auto-fallback bash)
 # pyenv shim
 eval "$(pyenv init -)"
 
+# nvm shim
+export NVM_DIR="$HOME/.nvm"
+. /usr/local/opt/nvm/nvm.sh --no-use
+
 # direnv hook to make it work
 # WARNING: needs to be the last line
 eval "$(direnv hook bash)"
