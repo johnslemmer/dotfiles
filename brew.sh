@@ -108,7 +108,7 @@ brew cask install visual-studio-code
 #brew cask install atom
 brew cask install hyper
 brew cask install sourcetree
-brew cask install etcher
+brew cask install balenaetcher
 
 # dev: apps
 # APP STORE install xcode
