@@ -73,13 +73,15 @@ brew install node
 brew install yarn
 brew install nvm
 brew install direnv
-brew install python@2
-brew install pyenv
-brew install pipenv
+# not sure we need python yet
+# brew install python@2
+# brew install pyenv
+# brew install pipenv
 brew install watchman
 
 # DVD ripping
-brew install libdvdcss
+# can't do illegal things at work
+# brew install libdvdcss
 
 # Others???
 
@@ -91,21 +93,24 @@ brew cask install karabiner-elements
 brew cask install google-chrome
 brew cask install dropbox
 brew cask install google-backup-and-sync
-brew cask install openoffice
+# no need since we have full office
+# brew cask install openoffice
 brew cask install adobe-acrobat-reader
 # APP STORE install magnet
 
 # personal
+# its a work computer not a personal computer
 # brew cask install spotify
-brew cask install handbrake
-brew cask install transmission
-brew cask install vlc
-brew cask install kindle
-brew cask install the-unarchiver
-brew cask install chrome-remote-desktop-host
+# brew cask install handbrake
+# brew cask install transmission
+# brew cask install vlc
+# brew cask install kindle
+# brew cask install the-unarchiver
+# brew cask install chrome-remote-desktop-host
 
 # dev: general
-brew cask install slack
+# already installed
+# brew cask install slack
 brew cask install visual-studio-code
 #brew cask install atom
 brew cask install hyper
@@ -114,27 +119,30 @@ brew cask install balenaetcher
 
 # dev: apps
 # APP STORE install xcode
+# probably not doing any mobile development
 brew cask install android-studio
 brew cask install genymotion
 
 # dev: server
 brew cask install graphql-playground
 brew cask install docker
-brew cask install java
+# hopefully I won't need this
+# brew cask install java
 
 # work
-brew cask install harvest
-brew cask install tunnelblick
-brew cask install virtualbox
-brew cask install perforce
-brew cask install p4v
-brew cask install zoomus
-brew cask install skype
+# not needed at CMM
+# brew cask install harvest
+# brew cask install tunnelblick
+# brew cask install virtualbox
+# brew cask install perforce
+# brew cask install p4v
+# brew cask install zoomus
+# brew cask install skype
 # brew cask install skype meetings app
 # brew cask install mimecast
 # brew cask install mailraider pro
-brew cask install vmware-horizon-client
-brew cask install manageengine-mibbrowser
+# brew cask install vmware-horizon-client
+# brew cask install manageengine-mibbrowser
 brew cask install wireshark
 brew cask install postman
 
@@ -149,9 +157,10 @@ yarn global add hyperlayout
 # PYTHON MODLES
 
 # dev
-pip2 install --upgrade pip
-pip2 install --upgrade setuptools
-pip2 install pylint
+# not sure we need python yet
+# pip2 install --upgrade pip
+# pip2 install --upgrade setuptools
+# pip2 install pylint
 #curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 #poetry completions bash > $(brew --prefix)/etc/bash_completion.d/poetry.bash-completion
 
