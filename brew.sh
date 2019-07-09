@@ -157,7 +157,7 @@ yarn global add hyperlayout
 # PYTHON MODLES
 
 # dev
-# not sure we need python yet
+# not sure we need python yet testing
 # pip2 install --upgrade pip
 # pip2 install --upgrade setuptools
 # pip2 install pylint
