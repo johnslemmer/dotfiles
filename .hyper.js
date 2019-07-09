@@ -97,7 +97,7 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false,
+    copyOnSelect: true,
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
@@ -105,6 +105,8 @@ module.exports = {
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
+
+    scrollback: 10000,
 
     // for advanced config flags please refer to https://hyper.is/#cfg
     alternateScroll: {
@@ -121,7 +123,9 @@ module.exports = {
   plugins: [
     "hyperlayout",
     "hyperterm-paste",
-    "hyper-solarized-light"
+    "hyper-solarized-dark",
+    "hyper-search",
+    "hypercwd"
   ],
 
   // in development, you can create a directory under
