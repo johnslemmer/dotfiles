@@ -53,8 +53,9 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # or we can optionally add @version to run an npm binary from anywhere
 source <(npx --shell-auto-fallback bash)
 
+# not doing python at CMM yet
 # pyenv shim
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 
 # nvm shim
 export NVM_DIR="$HOME/.nvm"

@@ -90,7 +90,7 @@ brew install watchman
 
 # essentials
 brew cask install karabiner-elements
-brew cask install google-chrome
+# brew cask install google-chrome
 brew cask install dropbox
 brew cask install google-backup-and-sync
 # no need since we have full office
@@ -120,8 +120,8 @@ brew cask install balenaetcher
 # dev: apps
 # APP STORE install xcode
 # probably not doing any mobile development
-brew cask install android-studio
-brew cask install genymotion
+# brew cask install android-studio
+# brew cask install genymotion
 
 # dev: server
 brew cask install graphql-playground
