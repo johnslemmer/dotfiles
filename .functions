@@ -175,3 +175,8 @@ function tre() {
 function title() {
 	echo -e "\033]0;${1:?please specify a title}\007";
 }
+
+# helpful little alias to setup new dev environments for CMM.
+function shovel() {
+	cd ~/Code/CMM/dev && ./script/run shovel "$@" && cd - > /dev/null;
+}
