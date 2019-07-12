@@ -148,3 +148,7 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Sorted ENV
 alias envs="env | sort"
+
+# helpful docker stuff
+alias de='docker exec -ti'
+alias dps='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}\t{{.Command}}\t{{.Image}}"'
