@@ -78,6 +78,7 @@ brew install direnv
 # brew install pyenv
 # brew install pipenv
 brew install watchman
+brew install azure-cli
 
 # DVD ripping
 # can't do illegal things at work
