@@ -61,6 +61,9 @@ source <(npx --shell-auto-fallback bash)
 export NVM_DIR="$HOME/.nvm"
 . /usr/local/opt/nvm/nvm.sh --no-use
 
+# RVM shim
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 # direnv hook to make it work
 # WARNING: needs to be the last line
 eval "$(direnv hook bash)"
