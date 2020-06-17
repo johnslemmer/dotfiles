@@ -49,20 +49,9 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# npx will automatically lookup scripts in the current project
-# or we can optionally add @version to run an npm binary from anywhere
-source <(npx --shell-auto-fallback bash)
+. $(brew --prefix asdf)/asdf.sh
 
-# not doing python at CMM yet
-# pyenv shim
-#eval "$(pyenv init -)"
-
-# nvm shim
-export NVM_DIR="$HOME/.nvm"
-. /usr/local/opt/nvm/nvm.sh --no-use
-
-# RVM shim
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 
 # direnv hook to make it work
 # WARNING: needs to be the last line
