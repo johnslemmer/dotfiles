@@ -8,9 +8,6 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-# Add cask so brew can install applications
-brew cask
-
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
@@ -50,6 +47,7 @@ brew install screen
 # Install other useful binaries.
 brew install ack
 #brew install exiv2
+brew install curl
 brew install git
 brew install git-lfs
 # brew install gs
@@ -70,9 +68,9 @@ brew install readline
 brew install xz
 
 # Other dev tools
+brew install asdf
 brew install node
 brew install yarn
-brew install nvm
 brew install direnv
 # not sure we need python yet
 # brew install python@2
@@ -91,70 +89,89 @@ brew install azure-cli
 # APPLICATIONS
 
 # essentials
-brew cask install karabiner-elements
-# brew cask install google-chrome
-brew cask install dropbox
-brew cask install google-backup-and-sync
+brew install karabiner-elements
+# brew install google-chrome
+brew install dropbox
+brew install google-backup-and-sync
 # no need since we have full office
-# brew cask install openoffice
-brew cask install adobe-acrobat-reader
+# brew install openoffice
+brew install adobe-acrobat-reader
 # APP STORE install magnet
 
 # personal
 # its a work computer not a personal computer
-# brew cask install spotify
-# brew cask install handbrake
-# brew cask install transmission
-# brew cask install vlc
-# brew cask install kindle
-# brew cask install the-unarchiver
-# brew cask install chrome-remote-desktop-host
+# brew install spotify
+# brew install handbrake
+# brew install transmission
+brew install vlc
+# brew install kindle
+# brew install the-unarchiver
+# brew install chrome-remote-desktop-host
+brew install discord
+brew install gimp
+brew install steam
 
 # dev: general
 # already installed
-# brew cask install slack
-brew cask install visual-studio-code
-#brew cask install atom
-brew cask install hyper
-brew cask install sourcetree
-brew cask install balenaetcher
+# brew install slack
+brew install visual-studio-code
+#brew install atom
+brew install hyper
+brew install sourcetree
+brew install balenaetcher
+brew install clipy
+brew install kap
 
 # dev: apps
 # APP STORE install xcode
 # probably not doing any mobile development
-# brew cask install android-studio
-# brew cask install genymotion
+# brew install android-studio
+# brew install genymotion
 
 # dev: server
-brew cask install graphql-playground
-brew cask install docker
+brew install graphql-playground
+brew install docker
 # hopefully I won't need this
-# brew cask install java
+# brew install java
 
 # work
 # not needed at CMM
-# brew cask install harvest
-# brew cask install tunnelblick
-# brew cask install virtualbox
-# brew cask install perforce
-# brew cask install p4v
-# brew cask install zoomus
-# brew cask install skype
-# brew cask install skype meetings app
-# brew cask install mimecast
-# brew cask install mailraider pro
-# brew cask install vmware-horizon-client
-# brew cask install manageengine-mibbrowser
-brew cask install wireshark
-brew cask install postman
+# brew install harvest
+# brew install tunnelblick
+# brew install virtualbox
+# brew install perforce
+# brew install p4v
+# brew install zoomus
+# brew install skype
+# brew install skype meetings app
+# brew install mimecast
+# brew install mailraider pro
+# brew install vmware-horizon-client
+# brew install manageengine-mibbrowser
+brew install wireshark
+brew install postman
+brew install azure-data-studio
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# ASDF SETUP
+asdf plugin add ruby
+asdf install ruby 2.4.6
+asdf install ruby 2.6.0
+asdf install ruby 2.6.6
+asdf install ruby latest
+asdf global ruby system
+asdf plugin add nodejs
+asdf install nodejs 6.9.1
+asdf global nodejs system
 
 # YARN GLOBALS
 
 # dev
 yarn global add hyperlayout
+yarn global add vercel
+yarn global add blitz
 
 # PYTHON MODLES
 
