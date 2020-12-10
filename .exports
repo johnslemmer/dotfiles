@@ -38,3 +38,6 @@ export GPG_TTY=$(tty);
 
 # User .p4config
 export P4CONFIG=.p4config
+
+# Hide the “default interactive shell is now zsh” warning on macOS.
+export BASH_SILENCE_DEPRECATION_WARNING=1;
