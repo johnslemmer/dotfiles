@@ -49,8 +49,9 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
+# NOTE: if your shell is starting slow then update these next two lines with the
+# explicit path output by `brew --prefix asdf`.
 . $(brew --prefix asdf)/asdf.sh
-
 . $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 
 # direnv hook to make it work
