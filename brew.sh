@@ -21,7 +21,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install a modern version of Bash.
 brew install bash
 brew install bash-completion2
@@ -66,6 +66,7 @@ brew install vbindiff
 brew install zopfli
 brew install readline
 brew install xz
+brew install jq
 
 # Other dev tools
 brew install asdf
@@ -78,6 +79,7 @@ brew install direnv
 # brew install pipenv
 brew install watchman
 brew install azure-cli
+brew install postgres
 
 # DVD ripping
 # can't do illegal things at work
@@ -130,7 +132,7 @@ brew install kap
 
 # dev: server
 brew install graphql-playground
-brew install docker
+brew install homebrew/cask/docker
 # hopefully I won't need this
 # brew install java
 
@@ -148,7 +150,7 @@ brew install docker
 # brew install mailraider pro
 # brew install vmware-horizon-client
 # brew install manageengine-mibbrowser
-brew install wireshark
+brew install homebrew/cask/wireshark
 brew install postman
 brew install azure-data-studio
 
