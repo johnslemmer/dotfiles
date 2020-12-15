@@ -99,6 +99,7 @@ brew install google-backup-and-sync
 # brew install openoffice
 brew install adobe-acrobat-reader
 # APP STORE install magnet
+brew install lastpass
 
 # personal
 # its a work computer not a personal computer
@@ -165,6 +166,8 @@ asdf install ruby 2.6.6
 asdf install ruby latest
 asdf global ruby system
 asdf plugin add nodejs
+# needed for installing the nodejs plugin
+bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
 asdf install nodejs 6.9.1
 asdf global nodejs system
 
