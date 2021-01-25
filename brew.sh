@@ -91,7 +91,8 @@ brew install postgres
 # APPLICATIONS
 
 # essentials
-brew install karabiner-elements
+# stop using karabiner in preference to hidutil
+# brew install karabiner-elements
 # brew install google-chrome
 brew install dropbox
 brew install google-backup-and-sync
